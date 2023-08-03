@@ -53,6 +53,14 @@ nav{
     cursor: pointer;
 }
 
+.logo>a {
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .nav-itens>li>a:hover{
     color: #9BC3FF;
     cursor: pointer;
@@ -88,7 +96,7 @@ nav{
   }
 
   .footer{
-    background-color: #4083E7;
+    background-color: #0366d6;
     padding: 24px;
     display: flex;
     align-items: center;
