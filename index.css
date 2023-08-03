@@ -25,6 +25,20 @@ nav{
     padding: 24px;
     align-items: center;
 }
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
 .nav-itens {
     list-style: none;
     display: flex;
@@ -107,3 +121,94 @@ nav{
     background-color: white;
   }
   
+
+  /* =========================== Começo do MEDIA QUERY =========================== */
+
+
+  @media (max-width: 1400px) {
+    .container {
+      flex-direction: column-reverse;
+      height: auto; 
+      margin: 5% 5%;
+    }
+  
+    .sobre,
+    .sobre2 {
+      margin: 5%; 
+    }
+    .nav-itens {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .container2 {
+      flex-direction: column;
+      margin: 5% 3%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+      nav {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center; 
+      padding: 32px; 
+    }
+  
+    .logo {
+      font-weight: 700;
+      font-size: 32px;
+      order: 1; 
+      margin-right: auto; 
+    }
+  
+    .menu-icon {
+      display: block;
+      order: 2; 
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .nav-itens {
+      list-style: none;
+      display: none; 
+      font-size: 20px;
+    }
+  
+    .nav-itens>li>a {
+      padding-left: 40px;
+      color: white;
+      text-decoration: none;
+      transition: background-color;
+      cursor: pointer;
+    }
+  
+    .nav-itens>li>a:hover {
+      color: #9BC3FF;
+      cursor: pointer;
+    }
+    .container {
+      margin: 5% 3%;
+    }
+    .container2 {
+      flex-direction: column;
+      margin: 5% 3%;
+    }
+  
+  }
+  @media (min-width: 751px) {
+    
+    .menu-icon {
+      display: none;
+    }
+  
+    .nav-itens {
+      display: flex;
+    }
+    
+  }
+
+    /* =========================== Fim do MEDIA QUERY =========================== */
